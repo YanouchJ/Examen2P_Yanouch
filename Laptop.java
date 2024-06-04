@@ -1,13 +1,15 @@
-public class Tablet implements IProducto {
+public class Laptop implements IProducto {
     private String nombre;
     private String marca;
     private double precio;
+    private int garantia;
 
     // CONSTRUCTOR
-    public Tablet(String nombre, String marca, double precio) {
+    public Laptop(String nombre, String marca, double precio, int garantia) {
         this.nombre = nombre;
         this.marca = marca;
         this.precio = precio;
+        this.garantia = garantia;
     }
 
     // MÉTODOS
@@ -30,4 +32,5 @@ public class Tablet implements IProducto {
     public void imprimeDetallesProducto() {
 
     }
+
 }
