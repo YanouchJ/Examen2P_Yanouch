@@ -1,33 +1,39 @@
 public class Tablet implements IProducto {
-    private String nombre;
+    private String modelo;
     private String marca;
     private double precio;
 
-    // CONSTRUCTOR
-    public Tablet(String nombre, String marca, double precio) {
-        this.nombre = nombre;
-        this.marca = marca;
-        this.precio = precio;
+
+    public Tablet() {
     }
 
     // MÉTODOS
     @Override
-    public String getMarca() {
-        return null;
+    public String getModelo() {
+        return modelo;
     }
 
     @Override
-    public String getModelo() {
-        return null;
+    public String getMarca() {
+        return marca;
     }
 
     @Override
     public double getPrecio() {
-        return 0;
+        return precio;
     }
 
     @Override
     public void imprimeDetallesProducto() {
 
     }
+
+    // CONSTRUCTOR
+    public Tablet(String modelo, String marca, double precio) {
+        this.modelo = modelo;
+        this.marca = marca;
+        this.precio = precio;
+    }
+    
+
 }

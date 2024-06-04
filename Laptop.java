@@ -1,36 +1,40 @@
 public class Laptop implements IProducto {
-    private String nombre;
+    private String modelo;
     private String marca;
     private double precio;
     private int garantia;
 
-    // CONSTRUCTOR
-    public Laptop(String nombre, String marca, double precio, int garantia) {
-        this.nombre = nombre;
-        this.marca = marca;
-        this.precio = precio;
-        this.garantia = garantia;
-    }
-
     // MÉTODOS
-    @Override
-    public String getMarca() {
-        return null;
-    }
 
     @Override
     public String getModelo() {
-        return null;
+        return modelo;
+    }
+    
+    @Override
+    public String getMarca() {
+        return marca;
     }
 
     @Override
     public double getPrecio() {
-        return 0;
+        return precio;
+    }
+
+    public int getGarantia() {
+        return garantia;
     }
 
     @Override
     public void imprimeDetallesProducto() {
+    }
 
+    // CONSTRUCTOR
+    public Laptop(String modelo, String marca, double precio, int garantia) {
+        this.modelo = modelo;
+        this.marca = marca;
+        this.precio = precio;
+        this.garantia = garantia;
     }
 
 }

@@ -1,34 +1,35 @@
 public class Telefono implements IProducto {
-    private String nombre;
+    private String modelo;
     private String marca;
     private double precio;
 
-    // CONSTRUCTOR
-    public Telefono(String nombre, String marca, double precio) {
-        this.nombre = nombre;
-        this.marca = marca;
-        this.precio = precio;
-    }
-
     // MÉTODOS
-    @Override
-    public String getMarca() {
-        return null;
-    }
 
     @Override
     public String getModelo() {
-        return null;
+        return modelo;
+    }
+
+    @Override
+    public String getMarca() {
+        return marca;
     }
 
     @Override
     public double getPrecio() {
-        return 0;
+        return precio;
     }
 
     @Override
     public void imprimeDetallesProducto() {
-
     }
+
+    // CONSTRUCTOR
+    public Telefono(String modelo, String marca, double precio) {
+        this.modelo = modelo;
+        this.marca = marca;
+        this.precio = precio;
+    }
+
 
 }
